@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback Form</title>
+
+    <!-- CSS Styling -->
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            margin: 50px auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        function showMessage() {
+            alert("Feedback Submitted Successfully!");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Student Feedback Form</h2>
+
+        <form onsubmit="showMessage()">
+            <input type="text" placeholder="Enter Name" required><br>
+            <input type="email" placeholder="Enter Email" required><br>
+            <textarea placeholder="Enter Feedback" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
